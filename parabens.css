@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@700&display=swap');
+  
+  p{
+      font-size: 30px;
+      position: absolute;
+      margin-left: 80px;
+      margin-top: 120px;
+      font-family: 'Space Mono', monospace;
+      color: #4F4F4F;
+  }
+  body{
+      background-color: rgb(255, 230, 243);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+  }
+  
+  body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+  }
+  
+    .container-one{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex: 1;
+    }
+  
+    :root{
+      --slice-color1: rgb(116, 88, 88);
+      --slice-color2: pink;
+      --slice-color3: rgb(250, 128, 148);
+      --slie-color4: rgb(250, 204, 201); 
+    }
+    
+    .circle{
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background-color: rgb(255, 216, 243);
+      border-radius: 50%;
+    }
+  
+  
+    .plate{
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent; 
+      border-right: 30px solid transparent; 
+      border-bottom: 100px solid rgb(202, 201, 201);
+      position: absolute;
+      margin-top: 300px;
+    }
+  
+    .plate2{
+      position: absolute;
+      width: 200px;
+      height: 10px;
+      background-color: rgb(202, 201, 201);
+      border-radius: 20%;
+      margin-top: 250px;
+    }
+  
+    .bolo1{
+      position: absolute;
+      margin-top: 192px;
+      width: 200px;
+      height: 50px;
+      background: var(--slice-color2);
+    }
+  
+    .bolo2{
+      margin-top: 100px;
+      position: absolute;
+      width: 165px;
+      height: 43px;
+      background: var(--slice-color2);
+    }
+    .bolo3{
+      position: absolute;
+      width: 110px;
+      height: 43px;
+      background: var(--slice-color2);
+      margin-top: 13px;
+    }
+  
+    .linha1{
+      width: 200px;
+      height: 4px;
+      background: var(--slice-color3);
+      position: absolute;
+      margin-top: 25px;
+    }
+  
+    .linha2{
+      width: 165px;
+      height: 4px;
+      background: var(--slice-color3);
+      position: absolute;
+      margin-top: 20px;
+    }
+  
+    .linha3{
+      width: 110px;
+      height: 4px;
+      background: var(--slice-color3);
+      position: absolute;
+      margin-top: 20px;
+    }
+  
+    .cobertura1{
+      width: 200px;
+      height: 4px;
+      position: absolute;
+      background: var(--slice-color1);
+    }
+  
+    .cobertura2{
+      width: 165px;
+      height: 4px;
+      position: absolute;
+      background: var(--slice-color1);
+    }
+    
+    .cobertura3{
+      width: 110px;
+      height: 4px;
+      position: absolute;
+      background: var(--slice-color1);
+    }
+  
+    .bolinha{
+      width: 10px;
+      height: 7px;
+      background: var(--slice-color1);
+      border-radius: 90%;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  
+    .vela{
+          width: 28px;
+          height: 5px;
+          background-color: white;
+          transform: rotate(90deg);
+          display: inline-block;
+          margin-bottom: 56px;
+      }
+  
+  
+      .fogo{
+        width: 10px;
+        height: 5px;
+        background-color: rgb(255, 94, 0);
+        z-index: 1;
+        transform: rotate(180deg);
+        display: inline-block;
+        margin-bottom: 50px;
+        animation: fogo 1s infinite alternate;
+      }
+  
+      @keyframes fogo {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 40px 10px #ff7e00;
+        }
+        25% {
+          background-color: rgb(255, 72, 0);
+        }
+        50% {
+          background-color: #ff7e00;
+        }
+        100% {
+          transform: scale(1.1);
+          box-shadow: 0 0 50px 15px #ff6363;
+        }
+      }
+
+  
+    .container-one {
+      transition: transform 1s ease-in-out 0ms;
+    }
+  
+    .container-one:active  {
+      transform: scale(1.5);
+      cursor: not-allowed;
+    }
+ 
+  
+    #footer{
+      font-size: 16px;
+      margin-left: 800px;
+    }
+  
+    a:hover{
+      color:#E26EE5;
+    }
+    
+    a{
+      color:#8E7AB5;
+    }
